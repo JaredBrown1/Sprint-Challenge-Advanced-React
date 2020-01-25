@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
-
 import WomanList from "./components/womanList";
+
+import DarkMode from "./components/darkModeButton";
 
 class App extends React.Component {
   constructor() {
@@ -24,6 +25,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <DarkMode className="dark-mode-button" />
         <WomanList women={this.state.women} />
       </div>
     );

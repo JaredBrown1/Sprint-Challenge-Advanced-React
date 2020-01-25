@@ -36,3 +36,8 @@
   color: #fff;
   background-color: #313843;
 }
+
+button {
+  height: 100px;
+  width: 100px;
+}
