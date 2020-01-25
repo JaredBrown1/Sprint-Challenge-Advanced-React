@@ -1,6 +1,6 @@
 import React from "react";
 
-const WomanCard = ({ key, name, country, searches }) => {
+const WomanCard = ({ name, country, searches }) => {
   return (
     <div>
       <div className="women-card">
