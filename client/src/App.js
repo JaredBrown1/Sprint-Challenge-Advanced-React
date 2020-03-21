@@ -3,6 +3,7 @@ import "./App.css";
 import axios from "axios";
 
 import PlayerCard from "./components/PlayerCard";
+import DarkMode from "./components/DarkModeButton";
 
 class App extends React.Component {
   state = {
@@ -22,6 +23,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <DarkMode />
         {this.state.players.map(item => {
           return <PlayerCard name={item.name} country={item.country} />;
         })}
